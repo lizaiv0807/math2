@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Ряди Тейлора</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Огляд рядів Тейлора та ряду Маклорена.">
+
+  <!-- Підключення CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Підключення MathJax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <h1>Ряди Тейлора</h1>
+
+  <p>
+    Ряд Тейлора дає змогу представити гладку функцію у вигляді нескінченної суми її похідних у певній точці.
+    Це корисно для наближень та аналітичного дослідження функцій.
+  </p>
+
+  <div class="formula-block">
+    $$ f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!}(x - a)^n $$
+  </div>
+
+  <p class="note">де \( f^{(n)}(a) \) — \( n \)-та похідна функції у точці \( a \)</p>
+
+  <p>Якщо \( a = 0 \), отримуємо <strong>ряд Маклорена</strong>:</p>
+
+  <div class="formula-block">
+    $$ f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(0)}{n!}x^n $$
+  </div>
+
+  <p>Приклад: розклад функції \( e^x \) у ряд Маклорена:</p>
+
+  <div class="formula-block">
+    $$ e^x = 1 + \frac{x}{1!} + \frac{x^2}{2!} + \frac{x^3}{3!} + \dots = \sum_{n=0}^{\infty} \frac{x^n}{n!} $$
+  </div>
+</body>
+</html>
